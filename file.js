@@ -34,8 +34,7 @@
                   $(this).show();
               }
           });
-        });
-     
+        });     
         var values=[];
         $('#button').click(function(){
           if($('#pickup').val()==null){
@@ -62,9 +61,6 @@
             cabtype=$('#cabtype').val();
           }
         luggage=$('#luggage').val();
-
-        
-          console.log(values);
           $.ajax({
             url:'calculate.php',
             type:'POST',
